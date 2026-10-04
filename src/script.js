@@ -24,7 +24,7 @@ const canvas = document.querySelector('canvas.webgl')
 const scene = new THREE.Scene()
 
 // Objects
-const geometry = new THREE.PlaneBufferGeometry(sizes.width, sizes.height, sizes.width/2, sizes.height/2);
+const geometry = new THREE.PlaneBufferGeometry(sizes.width, sizes.height, 128, 72);
 
 // Materials
 
