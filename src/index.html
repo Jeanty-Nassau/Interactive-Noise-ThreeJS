@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Noise Field — Three.js Study</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Noise Field — a procedural Three.js surface driven by simplex noise and moving light.">
+  <title>Noise Field — Three.js Study</title>
 </head>
 <body>
-    <div class="hero_left">
-        <h1>Noise Field</h1>
-        <P>Millions of developers and companies build, ship, and maintain their software
-            on GitHub-the largest and most advanced development platform.
-        </P>
-        <div class="hero_button">
-            <a href="">Learn More</a>
-        </div>
+  <main class="study-shell">
+    <section class="study-copy">
+      <p class="eyebrow">THREE.JS STUDY / 04</p>
+      <h1>Noise <span>Field</span></h1>
+      <p>A procedural surface driven by coherent noise, animated deformation and moving cobalt/orange light.</p>
+      <p class="hint">Move the pointer to shift the field · Scroll to change amplitude.</p>
+    </section>
+
+    <div id="canvasContainer">
+      <canvas class="webgl" aria-label="Interactive procedural noise field"></canvas>
     </div>
-    <div id='canvasContainer'>
-    <canvas class="webgl"></canvas>
-<aside class="study-note" aria-label="About this study"><strong>Noise Field</strong><span>A procedural surface study exploring coherent noise, animated deformation and moving light.</span></aside>
+
+    <aside class="controls-panel" aria-label="Noise controls">
+      <strong>Controls</strong>
+      <span>pointer / scroll</span>
+      <button type="button" data-reset-view>Reset</button>
+    </aside>
+  </main>
 </body>
 </html>
